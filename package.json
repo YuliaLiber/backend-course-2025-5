@@ -1,13 +1,15 @@
 {
   "name": "backend-course-2025-5",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "lab 5 cache http proxy",
+  "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js -h 127.0.0.1 -p 3000 -c cache",
+    "dev": "nodemon server.js -- -h 127.0.0.1 -p 3000 -c cache"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yulia Liber",
   "license": "ISC",
   "dependencies": {
     "commander": "^14.0.2",
